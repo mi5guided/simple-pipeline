@@ -1,4 +1,4 @@
-# simple-pipeline
+# simple-pipeline (Pipeline script from SCM)
 Creating a simple Jenkins pipeline
 
 Notes below are from: https://jenkins.io/pipeline/getting-started-pipelines/
@@ -25,4 +25,19 @@ node {
     def mvnHome = tool 'M3'
     sh "${mvnHome}/bin/mvn -B verify"
 }
+```
+
+## Advanced Groovy Syntax for Pipeline Configuration
+Groovy lets you omit parentheses around function arguments. The named-parameter syntax is also a shorthand for creating a map, which in Groovy uses the syntax [key1: value1, key2: value2], so you could write:
+
+```
+git([url: 'https://github.com/joe_user/simple-maven-project-with-tests.git', branch: 'master'])
+```
+For convenience, when calling steps taking only one parameter (or only one mandatory parameter) you can omit the parameter name. For example:
+```
+sh 'echo hello'
+```
+is really shorthand for:
+```
+sh([script: 'echo hello'])
 ```

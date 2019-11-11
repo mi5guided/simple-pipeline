@@ -2,15 +2,22 @@
 
 // a simple pipeline
 def pipeline = {
-	node ('single') {
-		stage('install')
-			echo "install"
-		stage('build')
-			echo "build"
-		stage('test')
-			echo "test"
-		stage('deploy')
-			echo "deploy"
+  node ('single') {
+    stage('install') {
+      sh 'echo install'
+    }
+
+    stage('build') {
+      sh 'echo build'
+    }
+
+    stage('test'){
+      sh 'echo test'
+    }
+    
+    stage('deploy') {
+      sh 'echo deploy'
+    }
   }
 }
 
