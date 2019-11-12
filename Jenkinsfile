@@ -1,7 +1,5 @@
 #!groovy
 
-// modify now, for another build?
-
 // a simple pipeline
 def pipeline = {
   node {
