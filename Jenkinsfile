@@ -2,7 +2,7 @@
 
 // a simple pipeline
 def pipeline = {
-  // node ('single') {
+  node {
     stage('install') {
       sh 'echo install'
     }
@@ -18,7 +18,7 @@ def pipeline = {
     stage('deploy') {
       sh 'echo deploy'
     }
-  // }
+  }
 }
 
 pipeline()
