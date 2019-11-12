@@ -1,5 +1,4 @@
 #!groovy
-def outputstr = Rambo("MyString");
 
 // another trigger comment: Nov 12 @ 2:20pm
 // another trigger comment: Nov 12 @ 1:13pm
@@ -9,7 +8,7 @@ def outputstr = Rambo("MyString");
 def pipeline = {
   node {
     stage('install') {
-
+      def example = load "${rootDir}@script/Rambo.Groovy"
       sh 'echo installing'
     }
 

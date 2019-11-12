@@ -1,7 +1,3 @@
-class Rambo {
-  public String name
+sh 'echo Rambo'
 
-  public Rambo(String name) {
-      return(name+"_append")
-  }
-}
+return this
