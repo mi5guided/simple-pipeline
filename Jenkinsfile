@@ -1,5 +1,6 @@
 #!groovy
 
+// another comment
 // a simple pipeline
 def pipeline = {
   node {
