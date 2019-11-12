@@ -2,7 +2,7 @@
 Creating a simple Jenkins pipeline
 
 Notes below are from: <p>
-https://jenkins.io/pipeline/getting-started-pipelines/
+https://jenkins.io/pipeline/getting-started-pipelines/<p>
 https://plugins.jenkins.io/github
 
 ## Approaches to Defining Pipeline Script
