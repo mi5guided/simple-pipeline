@@ -1,4 +1,7 @@
 #!groovy
+def outputstr = Rambo("MyString");
+
+// another trigger comment: Nov 12 @ 2:20pm
 // another trigger comment: Nov 12 @ 1:13pm
 // another trigger comment: Nov 12 @ 1:07pm
 // another trigger comment: Nov 12 @ 1:00pm
@@ -6,6 +9,7 @@
 def pipeline = {
   node {
     stage('install') {
+
       sh 'echo installing'
     }
 
