@@ -6,7 +6,7 @@
 def pipeline = {
   node {
     stage('install') {
-      sh 'echo install'
+      sh 'echo installing'
     }
 
     stage('build') {
