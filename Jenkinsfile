@@ -1,5 +1,5 @@
 #!groovy
-
+// another trigger comment: Nov 12 @ 1:00pm
 // a simple pipeline
 def pipeline = {
   node {
