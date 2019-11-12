@@ -1,7 +1,9 @@
 # simple-pipeline (Pipeline script from SCM)
 Creating a simple Jenkins pipeline
 
-Notes below are from: https://jenkins.io/pipeline/getting-started-pipelines/
+Notes below are from: <p>
+https://jenkins.io/pipeline/getting-started-pipelines/
+https://plugins.jenkins.io/github
 
 ## Approaches to Defining Pipeline Script
 You can create pipelines in either of the following ways:
